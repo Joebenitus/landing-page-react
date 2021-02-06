@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from './Main';
 import Navbar from './Navbar';
-import TestForm from './TestForm'
+import HeyThere from './HeyThere'
 import './../App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
       <Navbar/>
       <hr/>
-      <Main/>
+      <HeyThere/>
     </>
   );
 }

@@ -10,7 +10,7 @@ const useCurrentLocation = (locationId) => {
     return () => handleLocationChange;
   });
 
-  return currentLocation;
+  return [currentLocation, setCurrentLocation];
 }
 
 export default useCurrentLocation;
