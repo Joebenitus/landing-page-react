@@ -8,6 +8,9 @@ import minecraftImg from './../minecraftshop.png';
 
 
 const useStyles = makeStyles(() => ({
+  root: {
+    marginBottom: '300px'
+  },
   hellabyteImg: {
     backgroundImage: `url(${hellabyteImg})`,
     backgroundSize: 'cover',
@@ -40,7 +43,7 @@ const Projects = () => {
   const classes = useStyles()
 
   return (
-    <Container>
+    <Container className={classes.root}>
     <h1>Projects</h1>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={4}>

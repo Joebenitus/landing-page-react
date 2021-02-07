@@ -8,7 +8,9 @@ import portrait from './../portrait.JPG';
 
 const useStyles = makeStyles(() => ({
   root: {
-    height: '100vh'
+    height: '100vh',
+    marginTop: '30px',
+    marginBottom: '30px'
   },
   bg: {
     backgroundImage: `url(${portrait})`,

@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from './Main';
+import Skills from './Skills';
 import Navbar from './Navbar';
 import HeyThere from './HeyThere';
 import Projects from './Projects';
@@ -12,6 +12,7 @@ function App() {
       <hr/>
       <HeyThere/>
       <Projects/>
+      <Skills/>
     </>
   );
 }
