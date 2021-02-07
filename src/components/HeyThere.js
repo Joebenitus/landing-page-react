@@ -7,12 +7,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import portrait from './../portrait.JPG';
 
 const useStyles = makeStyles(() => ({
+  root: {
+    height: '100vh'
+  },
   bg: {
     backgroundImage: `url(${portrait})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    backgroundColor: 'rgba(0, 0, 0, 0.25)',
     height: '50vh'
   },
   textHeader: {
@@ -29,7 +31,7 @@ const HeyThere = () => {
   const classes = useStyles()
 
   return (
-    <Container>
+    <Container className={classes.root}>
     <h1>Hey there.</h1>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>

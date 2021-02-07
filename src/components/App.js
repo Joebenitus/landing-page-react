@@ -1,7 +1,8 @@
 import React from 'react';
 import Main from './Main';
 import Navbar from './Navbar';
-import HeyThere from './HeyThere'
+import HeyThere from './HeyThere';
+import Projects from './Projects';
 import './../App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navbar/>
       <hr/>
       <HeyThere/>
+      <Projects/>
     </>
   );
 }
