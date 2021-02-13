@@ -6,7 +6,6 @@ import hellabyteImg from './../hellabyte.png';
 import poserbotImg from './../poserbot.png';
 import minecraftImg from './../minecraftshop.png';
 
-
 const useStyles = makeStyles(() => ({
   root: {
     marginBottom: '300px'
@@ -15,19 +14,19 @@ const useStyles = makeStyles(() => ({
     backgroundImage: `url(${hellabyteImg})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    height: '45vh'
+    height: '100%'
   },
   poserbotImg: {
     backgroundImage: `url(${poserbotImg})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    height: '45vh'
+    height: '100%'
   },
   minecraftImg: {
     backgroundImage: `url(${minecraftImg})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    height: '45vh'
+    height: '100%'
   },
   textHeader: {
     fontSize: '16px'

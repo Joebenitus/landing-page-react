@@ -33,6 +33,32 @@ const Skills = () => {
         <Grid className={classes.skills} item xs={12} sm={3}>
           <h3>REST APIs</h3>
         </Grid>
+
+        <Grid className={classes.skills} item xs={12} sm={3}>
+          <h3>HTML</h3>
+        </Grid>
+        <Grid className={classes.skills} item xs={12} sm={3}>
+          <h3>Node.js</h3>
+        </Grid>
+        <Grid className={classes.skills} item xs={12} sm={3}>
+          <h3>Test Driven Development</h3>
+        </Grid>
+        <Grid className={classes.skills} item xs={12} sm={3}>
+          <h3>PostgreSQL</h3>
+        </Grid>
+
+        <Grid className={classes.skills} item xs={12} sm={3}>
+          <h3>Pair Programming</h3>
+        </Grid>
+        <Grid className={classes.skills} item xs={12} sm={3}>
+          <h3>Curious</h3>
+        </Grid>
+        <Grid className={classes.skills} item xs={12} sm={3}>
+          <h3>Fast Learner</h3>
+        </Grid>
+        <Grid className={classes.skills} item xs={12} sm={3}>
+          <h3>Communication Skills</h3>
+        </Grid>
       </Grid>
     </Container>
   )

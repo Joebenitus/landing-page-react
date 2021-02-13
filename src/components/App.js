@@ -1,8 +1,6 @@
 import React from 'react';
-import Skills from './Skills';
 import Navbar from './Navbar';
-import HeyThere from './HeyThere';
-import Projects from './Projects';
+import Body from './Body';
 import './../App.css';
 
 function App() {
@@ -10,9 +8,7 @@ function App() {
     <>
       <Navbar/>
       <hr/>
-      <HeyThere/>
-      <Projects/>
-      <Skills/>
+      <Body/>
     </>
   );
 }

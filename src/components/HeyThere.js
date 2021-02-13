@@ -8,16 +8,16 @@ import portrait from './../portrait.JPG';
 
 const useStyles = makeStyles(() => ({
   root: {
-    height: '100vh',
+    height: '400px',
     marginTop: '30px',
-    marginBottom: '30px'
+    marginBottom: '300px'
   },
   bg: {
     backgroundImage: `url(${portrait})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    height: '50vh'
+    height: '400px'
   },
   textHeader: {
     fontSize: '16px'
