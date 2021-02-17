@@ -10,6 +10,9 @@ const useStyles = makeStyles(() => ({
   root: {
     marginBottom: '300px'
   },
+  marginHeader: {
+    marginBottom: '50px'
+  },
   hellabyteImg: {
     backgroundImage: `url(${hellabyteImg})`,
     backgroundSize: 'cover',
@@ -43,14 +46,14 @@ const Projects = () => {
 
   return (
     <Container className={classes.root}>
-    <h1>Projects</h1>
-      <Grid container spacing={2}>
+    <h1 className={classes.marginHeader}>Projects</h1>
+      <Grid container spacing={5}>
         <Grid item xs={12} sm={4}>
           <div className={classes.hellabyteImg}></div>
         </Grid>
         <Grid item className={classes.textHeader} xs={12} sm={8}>
           <h2>Hellabyte</h2>
-          <h3 className={classes.textBody}>Hellabyte is a clicker game in which the goal is to collect as many bytes of data as possible. The game begins with the user accumulating 1 byte of data every time they click the 'download bytes' button. Bytes can be used as currency to purchase upgrades which increase your production speed. This happens either via upgrading how many bytes you recieve per click (Click Upgrades), or by purchasing auto-miners which grant X amount of bytes per second automatically (Auto Upgrades). After purchasing several upgrades, the user may accumulate absurd amounts of bytes up to an absolute max of 1 Hellabyte (1,024<sup>24</sup> bytes).</h3>
+          <h3 className={classes.textBody}>Hellabyte is a clicker game in which the goal is to collect as many bytes of data as possible. The game begins with the user accumulating 1 byte of data every time they click the 'download bytes' button. Bytes can be used as currency to purchase upgrades which increase your production speed. This happens either via upgrading how many bytes you recieve per click (Click Upgrades), or by purchasing auto-miners which grant X amount of bytes per second automatically (Auto Upgrades). After purchasing several upgrades, the user may accumulate absurd amounts of bytes up to an absolute max of 1 Hellabyte (1,024<sup>24</sup> bytes). Hellabyte was made using React and Redux.</h3>
         </Grid>
 
         <Grid item className={classes.textHeader} xs={12} sm={8}>
@@ -66,7 +69,7 @@ const Projects = () => {
         </Grid>
         <Grid item className={classes.textHeader} xs={12} sm={8}>
           <h2>Minecraft Shop</h2>
-          <h3 className={classes.textBody}>A Rails application which allows the user to create product listings and reviews for those products. Full CRUD functionality is included with both classes (Product and Review). A product can have many reviews (one-to-many relationship)</h3>
+          <h3 className={classes.textBody}>A Rails application which allows the user to create product listings and reviews for those products. Full CRUD functionality is included with both classes (Product and Review). A product can have many reviews (one-to-many relationship). This project was made using Ruby on Rails with a PostgreSQL database.</h3>
         </Grid>
       </Grid>
     </Container>

@@ -1,6 +1,7 @@
 import Skills from './Skills';
 import HeyThere from './HeyThere';
 import Projects from './Projects';
+import Education from './Education';
 
 function Body() {
   return (
@@ -8,6 +9,7 @@ function Body() {
       <HeyThere/>
       <Projects/>
       <Skills/>
+      <Education/>
     </>
   )
 }

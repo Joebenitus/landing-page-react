@@ -8,6 +8,9 @@ const useStyles = makeStyles(() => ({
     marginTop: '300px',
     marginBottom: '300px'
   },
+  marginHeader: {
+    marginBottom: '50px'
+  },
   skills: {
     textAlign: 'center'
   }
@@ -19,7 +22,7 @@ const Skills = () => {
 
   return (
     <Container className={classes.root}>
-    <h1>Skills</h1>
+    <h1 className={classes.marginHeader}>Skills</h1>
       <Grid container justify='center' alignItems='center' spacing={2}>
         <Grid className={classes.skills} item xs={12} sm={3}>
           <h3>JavaScript</h3>

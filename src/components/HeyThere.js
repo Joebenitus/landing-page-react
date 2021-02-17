@@ -12,6 +12,9 @@ const useStyles = makeStyles(() => ({
     marginTop: '30px',
     marginBottom: '300px'
   },
+  marginHeader: {
+    marginBottom: '50px'
+  },
   bg: {
     backgroundImage: `url(${portrait})`,
     backgroundPosition: 'center',
@@ -34,7 +37,7 @@ const HeyThere = () => {
 
   return (
     <Container className={classes.root}>
-    <h1>Hey there.</h1>
+    <h1 className={classes.marginHeader}>Hey there.</h1>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
           <div className={classes.bg}></div>
