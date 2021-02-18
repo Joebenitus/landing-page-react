@@ -8,7 +8,13 @@ import minecraftImg from './../minecraftshop.png';
 
 const useStyles = makeStyles(() => ({
   root: {
-    marginBottom: '300px'
+    marginBottom: '300px',
+    '& h1': {
+      textAlign: 'center',
+      fontWeight: '300',
+      fontSize: '40px',
+      paddingBottom: '50px'
+    },
   },
   marginHeader: {
     marginBottom: '50px'
@@ -32,7 +38,14 @@ const useStyles = makeStyles(() => ({
     height: '100%'
   },
   textHeader: {
-    fontSize: '16px'
+    '& h2': {
+      fontWeight: '300',
+      paddingBottom: '25px'
+    }, 
+    '& h3': {
+      fontWeight: '300',
+      lineHeight: '2'
+    },
   },
   textBody: {
     fontSize: '16px',
@@ -63,7 +76,6 @@ const Projects = () => {
         <Grid item xs={12} sm={4}>
           <div className={classes.poserbotImg}></div>
         </Grid>
-
         <Grid item xs={12} sm={4}>
           <div className={classes.minecraftImg}></div>
         </Grid>

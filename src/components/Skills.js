@@ -5,14 +5,23 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
   root: {
-    marginTop: '300px',
-    marginBottom: '300px'
+    marginBottom: '300px',
+    '& h1': {
+      textAlign: 'center',
+      fontWeight: '300',
+      fontSize: '40px',
+      paddingBottom: '50px'
+    },
   },
   marginHeader: {
     marginBottom: '50px'
   },
   skills: {
-    textAlign: 'center'
+    textAlign: 'center',
+    '& h3': {
+      fontWeight: '300',
+      fontSize: '25px'
+    }
   }
 }))
 
@@ -22,8 +31,9 @@ const Skills = () => {
 
   return (
     <Container className={classes.root}>
-    <h1 className={classes.marginHeader}>Skills</h1>
+      <h1>Skills</h1>
       <Grid container justify='center' alignItems='center' spacing={2}>
+
         <Grid className={classes.skills} item xs={12} sm={3}>
           <h3>JavaScript</h3>
         </Grid>

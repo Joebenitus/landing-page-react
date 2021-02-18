@@ -7,9 +7,13 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
   root: {
-    height: '400px',
-    marginTop: '30px',
-    marginBottom: '300px'
+    marginBottom: '300px',
+    '& h1': {
+      textAlign: 'center',
+      fontWeight: '300',
+      fontSize: '40px',
+      paddingBottom: '50px'
+    },
   },
   marginHeader: {
     marginBottom: '50px'
@@ -28,12 +32,15 @@ const useStyles = makeStyles(() => ({
     height: '100%'
   },
   textHeader: {
-    fontSize: '16px'
+    '& h2': {
+      fontWeight: '300',
+      paddingBottom: '25px'
+    }, 
+    '& h3': {
+      fontWeight: '300',
+      lineHeight: '2'
+    },
   },
-  textBody: {
-    fontSize: '16px',
-    lineHeight: '2'
-  }
 }))
 
 const Education = () => {

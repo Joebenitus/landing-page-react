@@ -8,7 +8,6 @@ import portrait from './../portrait.JPG';
 
 const useStyles = makeStyles(() => ({
   root: {
-    height: '400px',
     marginTop: '30px',
     marginBottom: '300px',
     '& h1': {
@@ -20,7 +19,6 @@ const useStyles = makeStyles(() => ({
     '& h2': {
       fontWeight: '300',
       paddingBottom: '25px'
-
     }
   },
   marginHeader: {
