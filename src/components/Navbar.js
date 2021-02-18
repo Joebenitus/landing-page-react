@@ -10,10 +10,13 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
     },
     title: {
-      fontSize: '16px',
+      fontWeight: '300'
     },
     itemList: {
-      fontSize: '14px'
+      fontSize: '14px',
+      '& h2': {
+        fontWeight: '300'
+      }
     },
     item: {
       padding: '2px',
@@ -44,7 +47,7 @@ const Navbar = () => {
     <div className={classes.root}>
       <Grid container direction='row' justify='space-evenly' alignItems='center'>
         <Grid item className={classes.title} xs={6}>
-          <h1>Joseph Karnafel</h1>
+          <h1 className={classes.title}>Joseph Karnafel</h1>
         </Grid>
         <Grid item className={classes.itemList} xs={6}>
           <h2>

@@ -1,12 +1,14 @@
 import Skills from './Skills';
-import HeyThere from './HeyThere';
+import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Education from './Education';
+import HeyThere from './HeyThere';
 
 function Body() {
   return (
     <>
       <HeyThere/>
+      <AboutMe/>
       <Projects/>
       <Skills/>
       <Education/>
