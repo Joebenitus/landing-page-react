@@ -3,6 +3,7 @@ import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Education from './Education';
 import HeyThere from './HeyThere';
+import Experience from './Experience';
 
 function Body() {
   return (
@@ -12,6 +13,7 @@ function Body() {
       <Projects/>
       <Skills/>
       <Education/>
+      <Experience/>
     </>
   )
 }
