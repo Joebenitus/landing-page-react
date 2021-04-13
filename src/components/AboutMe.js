@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import Container from '@material-ui/core/Container';
 import useCurrentLocation from '../hooks/useCurrentLocation'
 import Grid from '@material-ui/core/Grid';
@@ -41,17 +43,21 @@ const useStyles = makeStyles(() => ({
 
 const AboutMe = () => {
 
+  useEffect(() => {
+    Aos.init({ duration: 750 });
+  }, []);
+
   const classes = useStyles()
 
   return (
     <Container className={classes.root}>
-      <h1>About Me</h1>
-      <h2>My name is Joseph Karnafel.</h2>
+      <h1 data-aos='fade-up'>About Me</h1>
+      <h2 data-aos='fade-right'>My name is Joseph Karnafel.</h2>
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={6}>
+        <Grid data-aos='fade-right' item xs={12} sm={6}>
           <div className={classes.bg}></div>
         </Grid>
-        <Grid item className={classes.textHeader} xs={12} sm={6}>
+        <Grid data-aos='fade' item className={classes.textHeader} xs={12} sm={6}>
           <h3>I am a former college student with a passion for technology and problem solving. I have always been fascinated with computers and I have known for a long time that my dream career is in tech. I love programming because it is a playground for my analytical mind to run wild.</h3>
         </Grid>
       </Grid>
