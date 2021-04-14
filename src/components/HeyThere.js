@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 const useStyles = makeStyles(() => ({
@@ -19,11 +21,15 @@ const useStyles = makeStyles(() => ({
 
 const AboutMe = () => {
 
+  useEffect(() => {
+    Aos.init({ duration: 750 });
+  }, []);
+
   const classes = useStyles()
 
   return (
     <Container className={classes.root}>
-      <h1 className={classes.mainTxt}>Hey there.</h1>
+      <h1 data-aos='fade-up' className={classes.mainTxt}>Hey there.</h1>
     </Container>
   )
 }
