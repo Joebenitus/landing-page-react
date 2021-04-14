@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import epicodusImg from './../epicodus.png';
-import ttuImg from './../ttu.png';
+import epicodusImg from '../assets/images/epicodus.png';
+import ttuImg from '../assets/images/ttu.png';
 import { makeStyles } from '@material-ui/core/styles';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -44,6 +46,10 @@ const useStyles = makeStyles(() => ({
 }))
 
 const Education = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 750 });
+  }, []);
 
   const classes = useStyles()
 

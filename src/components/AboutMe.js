@@ -6,7 +6,7 @@ import useCurrentLocation from '../hooks/useCurrentLocation'
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-import portrait from './../portrait.JPG';
+import portrait from '../assets/images/portrait.JPG';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -51,7 +51,7 @@ const AboutMe = () => {
 
   return (
     <Container className={classes.root}>
-      <h1 data-aos='fade-up'>About Me</h1>
+      <h1 data-aos='fade-down'>About Me</h1>
       <h2 data-aos='fade-right'>My name is Joseph Karnafel.</h2>
       <Grid container spacing={2}>
         <Grid data-aos='fade-right' item xs={12} sm={6}>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -40,22 +40,22 @@ const useStyles = makeStyles((theme) => ({
 const Navbar = () => {
 
   const classes = useStyles();
-  const location = useCurrentLocation(null)
+  const [location, setLocation] = useState(null)
   
   return (
     <Container>
-    <div className={classes.root}>
-      <Grid container direction='row' justify='space-evenly' alignItems='center'>
-        <Grid item className={classes.title} xs={6}>
-          <h1 className={classes.title}>Joseph Karnafel</h1>
+      <div className={classes.root}>
+        <Grid container direction='row' justify='space-evenly' alignItems='center'>
+          <Grid item className={classes.title} xs={6}>
+            <h1 className={classes.title}>Joseph Karnafel</h1>
+          </Grid>
+          <Grid item className={classes.itemList} xs={6}>
+            <h2>
+              <span className={classes.item} id='about-me' onClick={() => setLocation(1)}>About Me</span> | <span className={classes.item} id='projects' onClick={() => setLocation(2)}>Projects</span> | <span className={classes.item} id='skills' onClick={() => setLocation(3)}>Skills</span> | <span className={classes.item} id='education' onClick={() => setLocation(4)}>Education</span> | <span className={classes.item} id='experience' onClick={() => setLocation(5)}>Experience</span>  
+            </h2>
+          </Grid>
         </Grid>
-        <Grid item className={classes.itemList} xs={6}>
-          <h2>
-            <span className={classes.item} id='projects'>Projects</span> | <span className={classes.item} id='skills'>Skills</span> | <span className={classes.item} id='education'>Education</span> | <span className={classes.item} id='experience'>Experience</span> | <span className={classes.item} id='about-me'>About Me</span> 
-          </h2>
-        </Grid>
-      </Grid>
-    </div>
+      </div>
     </Container>
   )
 }

@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react';
 
+const getCurrentLocation = (key, initialValue) => {
+  
+}
+
 const useCurrentLocation = (locationId) => {
-  const [currentLocation, setCurrentLocation] = useState(null);
+  const [currentLocation, setCurrentLocation] = useState(locationId);
 
   useEffect(() => {
-    function handleLocationChange() {
-      setCurrentLocation(locationId);
-    }
-    return () => handleLocationChange;
-  });
+    return setCurrentLocation(locationId);
+  }, []);
 
   return [currentLocation, setCurrentLocation];
 }

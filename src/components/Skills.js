@@ -37,8 +37,8 @@ const Skills = () => {
 
   return (
     <Container className={classes.root}>
-      <h1>Skills</h1>
-      
+      <h1 data-aos='fade-down'>Skills</h1>
+
       <Grid container justify='center' alignItems='center' spacing={2}>
         <Grid item container data-aos='fade-up'>
           <Grid className={classes.skills} item xs={12} sm={3}>

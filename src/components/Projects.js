@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import hellabyteImg from './../hellabyte.png';
-import poserbotImg from './../poserbot.png';
-import minecraftImg from './../minecraftshop.png';
+import hellabyteImg from '../assets/images/hellabyte.png';
+import poserbotImg from '../assets/images/poserbot.png';
+import minecraftImg from '../assets/images/minecraftshop.png';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -66,7 +66,7 @@ const Projects = () => {
 
   return (
     <Container className={classes.root}>
-    <h1 data-aos='fade-up' className={classes.marginHeader}>Projects</h1>
+    <h1 data-aos='fade-down' className={classes.marginHeader}>Projects</h1>
       <Grid container spacing={5}>
         <Grid data-aos='fade-right' item xs={12} sm={4}>
           <div className={classes.hellabyteImg}></div>
