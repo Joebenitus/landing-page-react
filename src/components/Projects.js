@@ -66,7 +66,7 @@ const Projects = () => {
 
   return (
     <Container className={classes.root}>
-    <h1 data-aos='fade-down' className={classes.marginHeader}>Projects</h1>
+    <h1 className={classes.marginHeader}>Projects</h1>
       <Grid container spacing={5}>
         <Grid data-aos='fade-right' item xs={12} sm={4}>
           <div className={classes.hellabyteImg}></div>

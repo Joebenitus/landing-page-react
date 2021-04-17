@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import jobsmightImg from '../assets/images/jobsmight.png';
 import { makeStyles } from '@material-ui/core/styles';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -38,19 +40,27 @@ const useStyles = makeStyles(() => ({
 
 const Experience = () => {
 
+  useEffect(() => {
+    Aos.init({ duration: 750 });
+  }, []);
+
   const classes = useStyles()
 
   return (
     <Container className={classes.root}>
       <h1 className={classes.marginHeader}>Experience</h1>
       <Grid container spacing={5}>
-        <Grid item xs={12} sm={4}>
-          <div className={classes.bgJobsmight}></div>
+
+        <Grid item container data-aos='fade-right'>
+          <Grid item xs={12} sm={4}>
+            <div className={classes.bgJobsmight}></div>
+          </Grid>
+          <Grid className={classes.textHeader} item xs={12} sm={8}>
+            <h2>JobsMight</h2>
+            <h3 className={classes.textBody}>After Epicodus, I interned for a company called JobsMight as a full-stack engineer. At JobsMight, I worked with a large codebase written in the MERN stack (MongoDB, Express.js, React.js, and Node.js). Some of my responsibilities included performing QA testing, performance optimization, authenticating API responses, implementing payment functionality, and building a new landing page. Even though I was unfamiliar with MongoDB and Express.js, I was able to learn and utilize these tools in the first week.</h3>
+          </Grid>
         </Grid>
-        <Grid className={classes.textHeader} item xs={12} sm={8}>
-          <h2>JobsMight</h2>
-          <h3 className={classes.textBody}>After Epicodus, I interned for a company called JobsMight as a full-stack engineer. At JobsMight, I worked with a large codebase written in the MERN stack (MongoDB, Express.js, React.js, and Node.js). Some of my responsibilities included performing QA testing, performance optimization, authenticating API responses, implementing payment functionality, and building a new landing page. Even though I was unfamiliar with MongoDB and Express.js, I was able to learn and utilize these tools in the first week.</h3>
-        </Grid>
+        
       </Grid>
     </Container>
   )

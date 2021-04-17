@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Container from '@material-ui/core/Container';
-import useCurrentLocation from '../hooks/useCurrentLocation'
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -51,7 +50,7 @@ const AboutMe = () => {
 
   return (
     <Container className={classes.root}>
-      <h1 data-aos='fade-down'>About Me</h1>
+      <h1>About Me</h1>
       <h2 data-aos='fade-right'>My name is Joseph Karnafel.</h2>
       <Grid container spacing={2}>
         <Grid data-aos='fade-right' item xs={12} sm={6}>

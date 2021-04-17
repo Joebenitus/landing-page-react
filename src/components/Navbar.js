@@ -3,7 +3,6 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
-import useCurrentLocation from './../hooks/useCurrentLocation';
 
 const useStyles = makeStyles((theme) => ({
     root: {

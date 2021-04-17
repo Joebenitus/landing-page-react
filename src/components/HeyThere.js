@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 
 const useStyles = makeStyles(() => ({
   root: {
-    height: '400px',
+    height: '600px',
     marginTop: '30px',
     marginBottom: '300px'
   },
