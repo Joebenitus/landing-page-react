@@ -39,7 +39,6 @@ const useStyles = makeStyles((theme) => ({
 const Navbar = () => {
 
   const classes = useStyles();
-  const [location, setLocation] = useState(null)
   
   return (
     <Container>
@@ -50,7 +49,7 @@ const Navbar = () => {
           </Grid>
           <Grid item className={classes.itemList} xs={6}>
             <h2>
-              <span className={classes.item} id='about-me' onClick={() => setLocation(1)}>About Me</span> | <span className={classes.item} id='projects' onClick={() => setLocation(2)}>Projects</span> | <span className={classes.item} id='skills' onClick={() => setLocation(3)}>Skills</span> | <span className={classes.item} id='education' onClick={() => setLocation(4)}>Education</span> | <span className={classes.item} id='experience' onClick={() => setLocation(5)}>Experience</span>  
+              <span className={classes.item} id='about-me'>About Me</span> | <span className={classes.item} id='projects'>Projects</span> | <span className={classes.item} id='skills'>Skills</span> | <span className={classes.item} id='education'>Education</span> | <span className={classes.item} id='experience'>Experience</span>  
             </h2>
           </Grid>
         </Grid>
